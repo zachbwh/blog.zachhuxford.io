@@ -1,0 +1,89 @@
+/* General Styles */
+body,h2,h3,h4,h5,h6 {
+	font-family: "Lato", sans-serif
+}
+h1,button {
+	font-family: "Montserrat", sans-serif
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Styles */
+.blogpost .title {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+  
+.blogpost .date {
+    font-size: 16px;
+    color: #757575;
+    text-align: right;
+}
+  
+.blogpost h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 16px;
+    padding-bottom: 0px;
+    width: 100%
+}
+  
+.blogpost h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    width: 100%
+}
+  
+.blogpost .body {
+    font-size: 18px;
+    padding: 16px;
+}
+  
+.blogpost .code {
+    margin-left: 16px;
+    text-align: left;
+    padding:16px;
+    background-color: #DDDDDD;
+    overflow-x: scroll;
+    font-family: monospace;
+}
+  
+.blogpost .quote {
+    padding: 48px;
+    color: #c8af16;
+    font-size: 24px;
+    text-align: center;
+}
+  
+.blogpost .caption {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-top: -24px;
+}
+  
+.blogpost .image {
+    max-width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+}
+
+.aboutAuthor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.aboutAuthor {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
