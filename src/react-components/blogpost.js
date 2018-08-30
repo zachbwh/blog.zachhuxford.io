@@ -35,7 +35,7 @@ class BlogPost extends React.Component {
         } else {
             var disqusConfig = {
                 url: config.disqus.domain + "/" + blogpost.postID + "-" + blogpost.urlTitle + "/",
-                identfier: blogpost.disqusID,
+                identifier: blogpost.disqusID,
                 title: blogpost.title
             }
             var disqusShortname = "zachhuxford-io"
