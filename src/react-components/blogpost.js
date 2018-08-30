@@ -92,7 +92,6 @@ class BlogPost extends React.Component {
     }
 
     renderNewPost = (blogpost) => {
-        debugger;
         window.history.pushState("New Post Rendering", "Zach Huxford's Blog - " + blogpost.title , "/" + blogpost.postID + "-" + blogpost.urlTitle + "/");
         this.getAndUpdatePost();
         // this.setState({

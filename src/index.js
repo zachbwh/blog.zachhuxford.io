@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './css/w3.css';
 import './css/index.css';
 
-import BlogPost from './react-components/blogpost.js'
+import PageRouter from './react-components/page-router.js'
 
 ReactDOM.render(
-    <BlogPost />,
+    <PageRouter />,
     document.getElementById('root')
 );
