@@ -1,18 +1,8 @@
-/* General Styles */
-body,h2,h3,h4,h5,h6 {
-	font-family: "Lato", sans-serif
-}
-h1,button {
-	font-family: "Montserrat", sans-serif
-}
-a {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+/* Blog Styles */
+.blogpost {
+    margin: 16px;
 }
 
-/* Blog Styles */
 .blogpost .title {
     font-weight: bold;
     font-size: 40px;
@@ -75,15 +65,28 @@ a:hover {
     border-radius: 4px;
 }
 
-.aboutAuthor img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+/* Navigate Buttons Styles */
+.navigator-buttons button {
+    height: 2em;
+    line-height: 2em;
+    text-align:center;
+    font: 1.5em/100% "Lato", sans-serif;
+    margin: 0.5em 0em;
+    background-color: #DDDDDD;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
 }
 
-.aboutAuthor {
-    text-align: right;
-    font-size: 18px;
-    font-weight: bold;
-    list-style-type: none;
+.navigator-buttons button:hover {
+    background-color: #757575;
+    color: white;
+}
+
+.navigator-buttons button:active {
+    box-shadow: none;
+}
+
+.navigator-buttons .navigate-right-button {
+    float: right;
 }

@@ -1,0 +1,13 @@
+/* Author Section Styles */
+.aboutAuthor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.aboutAuthor {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
