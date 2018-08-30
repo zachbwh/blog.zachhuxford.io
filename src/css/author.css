@@ -11,3 +11,22 @@
     font-weight: bold;
     list-style-type: none;
 }
+
+.aboutAuthor .padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.aboutAuthor .center {
+    text-align: center!important;
+}
+
+.aboutAuthor .third {
+    float:left;
+    width: 33.33333%;
+}
+
+.aboutAuthor .twothird {
+    float:left;
+    width: 66.66666%;
+}

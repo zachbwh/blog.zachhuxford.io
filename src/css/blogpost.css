@@ -1,6 +1,8 @@
 /* Blog Styles */
 .blogpost {
-    margin: 16px;
+    margin: auto;
+    max-width:980px;
+    padding: 16px;
 }
 
 .blogpost .title {

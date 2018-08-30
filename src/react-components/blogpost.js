@@ -42,15 +42,13 @@ class BlogPost extends React.Component {
 
             return (
                 <div className="blogpost">
-                    <div className="w3-content">
-                        <h1 className="title">{blogpost.title}</h1>
-                        <p className="date">{this.renderPostDate()}</p>
-                        <NavigateButtons prevPost={blogpost.previousPost} nextPost={blogpost.nextPost} changePost={this.renderNewPost} />
-                        <div dangerouslySetInnerHTML={{__html: blogpost.body}}/>
-                        <NavigateButtons prevPost={blogpost.previousPost} nextPost={blogpost.nextPost} changePost={this.renderNewPost}/>
-                        <AboutAuthor author={blogpost.author} />
-                        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-                    </div>
+                    <h1 className="title">{blogpost.title}</h1>
+                    <p className="date">{this.renderPostDate()}</p>
+                    <NavigateButtons prevPost={blogpost.previousPost} nextPost={blogpost.nextPost} changePost={this.renderNewPost} />
+                    <div dangerouslySetInnerHTML={{__html: blogpost.body}}/>
+                    <NavigateButtons prevPost={blogpost.previousPost} nextPost={blogpost.nextPost} changePost={this.renderNewPost}/>
+                    <AboutAuthor author={blogpost.author} />
+                    <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                 </div>
             );
         }

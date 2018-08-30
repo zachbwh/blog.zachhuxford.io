@@ -53,10 +53,10 @@ class AboutAuthor extends React.Component {
             return (
                 <div className="aboutAuthor">
                     <h1 className="title">About the Author</h1>
-                    <div className="w3-third w3-center w3-padding-64">
+                    <div className="third center padding-64">
                         <img src={aboutAuthor.displayPhoto}/>
                     </div>
-                    <ul className="aboutAuthor w3-twothird w3-padding-64">
+                    <ul className="aboutAuthor twothird padding-64">
                         <li>{aboutAuthor.name}</li>
                         <li>{aboutAuthor.age}</li>
                         <div dangerouslySetInnerHTML={{__html: aboutAuthor.body}} />
