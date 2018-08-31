@@ -43,6 +43,7 @@ class BlogPost extends React.Component {
             return (
                 <div className="blogpost">
                     <h1 className="title">{blogpost.title}</h1>
+                    <PostHashTags tags={blogpost.tags} />
                     <p className="date">{this.renderPostDate()}</p>
                     <NavigateButtons prevPost={blogpost.previousPost} nextPost={blogpost.nextPost} changePost={this.renderNewPost} />
                     <div dangerouslySetInnerHTML={{__html: blogpost.body}}/>
@@ -94,10 +95,31 @@ class BlogPost extends React.Component {
     renderNewPost = (blogpost) => {
         window.history.pushState("New Post Rendering", "Zach Huxford's Blog - " + blogpost.title , "/" + blogpost.postID + "-" + blogpost.urlTitle + "/");
         this.getAndUpdatePost();
-        // this.setState({
-        //     error: null,
-        //     isLoaded: false
-        // })
+    }
+}
+
+class PostHashTags extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            tags: props.tags
+        }
+    }
+
+    render() {
+        return (
+            <div className="hashtags">
+                {this.state.tags.map(function(tag, index, array) {
+                    var link = "/search/tag/" + tag;
+                    if (index < array.length - 1) {
+                        return <span className="hashtag"><a href={ link }>#{ tag }</a>, </span>
+                    } else {
+                        return <span className="hashtag"><a href={ link }>#{ tag }</a></span>
+                    }
+                })}
+                
+            </div>
+        );
     }
 }
 
