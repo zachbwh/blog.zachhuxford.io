@@ -4,22 +4,22 @@
     padding: 16px;
 }
 
-.blogspotSearchResult {
+.blogpostSearchResult {
     width: 100%;
     display: inline-block;
     padding: 16px;
 }
 
-.blogspotSearchResult:hover {
+.blogpostSearchResult:hover {
     background-color: #DDDDDD;
 }
 
-.blogspotSearchResult .thumbnail {
+.blogpostSearchResult .thumbnail {
     width: 100%;
     object-fit: cover;
 }
 
-.blogspotSearchResult .body {
+.blogpostSearchResult .body {
     width: 100%;
     padding: 8px;
     overflow: hidden;
@@ -28,21 +28,21 @@
 }
 
 @media (min-width:601px) {
-    .blogspotSearchResult .thumbnail {
+    .blogpostSearchResult .thumbnail {
         width: 25%;
-        height: 150px;
+        /* height: 150px; */
         float: left;
     }
 
-    .blogspotSearchResult .body {
+    .blogpostSearchResult .body {
         width: 74.99999%;
-        height: 150px;
+        /* height: 150px; */
         float: left;
         padding-left: 16px;
     }
 }
 
-.blogspotSearchResult .postLink {
+.blogpostSearchResult .postLink {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: bold;

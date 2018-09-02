@@ -1,0 +1,76 @@
+.navBar {
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    background-color: #DDDDDD;
+    font-size: 18px;
+    position: fixed;
+    top: 0px;
+}
+
+.navBar .navBarItemLeft {
+    float: left;
+    padding: 8px 16px 8px 8px;
+}
+
+.navBar .navBarItemRight {
+    float: right;
+    padding: 8px 8px 8px 16px;
+}
+
+.navBar .search {
+    width: 221px;
+    padding: 8px 0px 8px 0px;
+}
+
+.navBar .mobile {
+    display: none;
+}
+
+@media (max-width: 601px) {
+    .navBar .desktop {
+        display: none;
+    }
+
+    .navBar .search {
+        float: initial;
+        margin: auto;
+    }
+
+    .navBar .mobile {
+        display: inline;
+        float: none;
+    }
+}
+
+.mobileNavBar {
+    width: 100%;
+    background-color: #DDDDDD;
+    font-size: 18px;
+    position: fixed;
+    top: 63px;
+}
+
+.mobileNavBar ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.mobileNavBar li {
+    margin: none;
+    padding: 8px;
+}
+
+.mobileNavBar li:hover {
+    background-color: #757575;
+    color: white;
+}
+
+.mobileNavBar a {
+    width: 100%;
+    padding-left: 16px;
+}
+
+.mobileNavBar a:hover {
+    text-decoration: none;
+}

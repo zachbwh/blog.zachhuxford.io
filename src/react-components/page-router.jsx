@@ -1,5 +1,6 @@
 import React from 'react';
 
+import NavBar from './nav-bar/nav-bar';
 import BlogPost from './blogpost/blogpost';
 import HomePage from './homepage';
 import AboutPage from './aboutpage';
@@ -13,13 +14,33 @@ class PageRouter extends React.Component {
     render() {
         var path = window.location.pathname;
         if (path === "" || path === "/") {
-            return <HomePage />
+            return (
+                <div>
+                    <NavBar />                
+                    <HomePage />
+                </div>
+            )
         } else if (path === "/about") {
-            return <AboutPage />
+            return (
+                <div>
+                    <NavBar />                
+                    <AboutPage />
+                </div>
+            )
         } else if (path.startsWith("/search")) {
-            return <SearchPage />
+            return (
+                <div>
+                    <NavBar />                
+                    <SearchPage />
+                </div>
+            )
         } else {
-            return <BlogPost />
+            return (
+                <div>
+                    <NavBar />                
+                    <BlogPost />
+                </div>
+            )
         }
     }
 }
