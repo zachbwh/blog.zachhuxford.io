@@ -1,0 +1,49 @@
+.searchResults {
+    margin: auto;
+    max-width:980px;
+    padding: 16px;
+}
+
+.blogspotSearchResult {
+    width: 100%;
+    display: inline-block;
+    padding: 16px;
+}
+
+.blogspotSearchResult:hover {
+    background-color: #DDDDDD;
+}
+
+.blogspotSearchResult .thumbnail {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogspotSearchResult .body {
+    width: 100%;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width:601px) {
+    .blogspotSearchResult .thumbnail {
+        width: 25%;
+        height: 150px;
+        float: left;
+    }
+
+    .blogspotSearchResult .body {
+        width: 74.99999%;
+        height: 150px;
+        float: left;
+        padding-left: 16px;
+    }
+}
+
+.blogspotSearchResult .postLink {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}

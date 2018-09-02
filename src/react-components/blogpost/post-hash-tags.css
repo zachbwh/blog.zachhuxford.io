@@ -1,0 +1,12 @@
+.blogpost .hashtags {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    color: #757575;
+}
+
+@media (min-width:601px) {
+    .blogpost .hashtags {
+        width: 49.99999%;
+    }
+}

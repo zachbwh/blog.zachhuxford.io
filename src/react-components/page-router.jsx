@@ -1,8 +1,9 @@
 import React from 'react';
 
-import BlogPost from './blogpost.js';
-import HomePage from './homepage.js';
-import AboutPage from './aboutpage.js';
+import BlogPost from './blogpost/blogpost';
+import HomePage from './homepage';
+import AboutPage from './aboutpage';
+import SearchPage from './searchpage';
 
 class PageRouter extends React.Component {
     constructor(props) {
@@ -12,13 +13,11 @@ class PageRouter extends React.Component {
     render() {
         var path = window.location.pathname;
         if (path === "" || path === "/") {
-            return (
-                <HomePage />
-            );
+            return <HomePage />
         } else if (path === "/about") {
-            return (
-                <AboutPage />
-            );
+            return <AboutPage />
+        } else if (path.startsWith("/search")) {
+            return <SearchPage />
         } else {
             return <BlogPost />
         }

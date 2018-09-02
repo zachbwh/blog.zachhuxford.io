@@ -3,12 +3,14 @@ import moment from 'moment';
 import Handlebars from 'handlebars';
 import Disqus from 'disqus-react';
 
-import NavigateButtons from './navigate-buttons.js';
-import AboutAuthor from './author.js';
+import PostHashTags from './post-hash-tags'
+import NavigateButtons from './navigate-buttons';
+import LoadingIcon from '../loading-icon';
+import AboutAuthor from '../author';
 
-import config from '../config.js';
+import config from '../../config.js';
 
-import '../css/blogpost.css';
+import './blogpost.css';
 
 
 class BlogPost extends React.Component {
@@ -31,7 +33,7 @@ class BlogPost extends React.Component {
             console.log(error.message)
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <LoadingIcon />;
         } else {
             var disqusConfig = {
                 url: config.disqus.domain + "/" + blogpost.postID + "-" + blogpost.urlTitle + "/",
@@ -95,31 +97,6 @@ class BlogPost extends React.Component {
     renderNewPost = (blogpost) => {
         window.history.pushState("New Post Rendering", "Zach Huxford's Blog - " + blogpost.title , "/" + blogpost.postID + "-" + blogpost.urlTitle + "/");
         this.getAndUpdatePost();
-    }
-}
-
-class PostHashTags extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            tags: props.tags
-        }
-    }
-
-    render() {
-        return (
-            <div className="hashtags">
-                {this.state.tags.map(function(tag, index, array) {
-                    var link = "/search/tag/" + tag;
-                    if (index < array.length - 1) {
-                        return <span className="hashtag"><a href={ link }>#{ tag }</a>, </span>
-                    } else {
-                        return <span className="hashtag"><a href={ link }>#{ tag }</a></span>
-                    }
-                })}
-                
-            </div>
-        );
     }
 }
 
