@@ -54,7 +54,7 @@ class AboutAuthor extends React.Component {
                 <div className="aboutAuthor">
                     <h1 className="title">About the Author</h1>
                     <div className="third center padding-64">
-                        <img src={aboutAuthor.displayPhoto}/>
+                        <img src={aboutAuthor.displayPhoto} alt={ aboutAuthor.name }/>
                     </div>
                     <ul className="aboutAuthor twothird padding-64">
                         <li>{aboutAuthor.name}</li>

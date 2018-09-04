@@ -23,7 +23,7 @@ class SearchPage extends React.Component {
     }
 
     render() {
-        const { error, isLoaded, blogposts } = this.state;
+        const { error, isLoaded } = this.state;
         if (error) {
             console.log(error.message)
             return <div>Error: {error.message}</div>;
@@ -33,7 +33,7 @@ class SearchPage extends React.Component {
         return (
             <div className="searchResults">
                 {this.state.blogposts.map(function(blogpost, index, blogposts) {
-                    return <BlogPostSearchResult blogpost={ blogpost } />
+                    return <BlogPostSearchResult key={ blogpost.postID } blogpost={ blogpost } />
                 })}
             </div>
         );

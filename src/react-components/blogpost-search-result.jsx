@@ -19,7 +19,7 @@ class BlogPostSearchResult extends React.Component {
         var blogpostURL = "/" + blogpost.postID + "-" + blogpost.urlTitle;
         return (
             <div className="blogpostSearchResult" >
-                <a href={ blogpostURL }><img className="thumbnail" src={ thumbnailSrc }/></a>
+                <a href={ blogpostURL }><img className="thumbnail" src={ thumbnailSrc } alt=""/></a>
                 <div className="body">
                     <a className="postLink" href={ blogpostURL }>{ blogpost.title }</a>
                     <div>

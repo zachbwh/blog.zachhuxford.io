@@ -31,6 +31,15 @@
     padding: 16px;
     width: 100%
 }
+
+.blogpost ul {
+
+}
+
+.blogpost li {
+    padding: 4px;
+    font-size: 18px;
+}
   
 .blogpost .body {
     font-size: 18px;
@@ -65,6 +74,7 @@
     margin-top: 32px;
     margin-bottom: 32px;
     border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px #ccc;
 }
 
 /* Navigate Buttons Styles */

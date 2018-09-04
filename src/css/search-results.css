@@ -17,6 +17,7 @@
 .blogpostSearchResult .thumbnail {
     width: 100%;
     object-fit: cover;
+    box-shadow: 3px 3px 3px 3px #ccc;
 }
 
 .blogpostSearchResult .body {
