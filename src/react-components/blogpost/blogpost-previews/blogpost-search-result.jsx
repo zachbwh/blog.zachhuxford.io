@@ -1,9 +1,9 @@
 import React from 'react';
-import PostHashTags from './blogpost/post-hash-tags';
+import PostHashTags from '../post-hash-tags';
 import moment from 'moment';
 
 
-import '../css/search-results.css';
+import './blogpost-search-result.css';
 
 class BlogPostSearchResult extends React.Component {
     constructor(props) {
@@ -19,13 +19,15 @@ class BlogPostSearchResult extends React.Component {
         var blogpostURL = "/" + blogpost.postID + "-" + blogpost.urlTitle;
         return (
             <div className="blogpostSearchResult" >
-                <a href={ blogpostURL }><img className="thumbnail" src={ thumbnailSrc } alt=""/></a>
-                <div className="body">
-                    <a className="postLink" href={ blogpostURL }>{ blogpost.title }</a>
-                    <div>
-                        <span className="author">{ blogpost.author.name }</span>
-                        <PostHashTags tags={blogpost.tags} length={5}/>
-                        <p className="date">{this.renderPostDate()}</p>
+                <div className="container">
+                    <a href={ blogpostURL }><img className="thumbnail" src={ thumbnailSrc } alt=""/></a>
+                    <div className="body">
+                        <a className="postLink" href={ blogpostURL }>{ blogpost.title }</a>
+                        <div>
+                            <span className="author">{ blogpost.author.name }</span>
+                            <PostHashTags tags={blogpost.tags} length={5}/>
+                            <p className="date">{this.renderPostDate()}</p>
+                        </div>
                     </div>
                 </div>
             </div>

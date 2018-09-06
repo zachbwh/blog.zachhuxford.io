@@ -1,0 +1,32 @@
+.blogpostThumbnailLarge {
+    width: 50%;
+    float: left;
+}
+
+.blogpostThumbnailLarge .container {
+    margin: 8px;
+}
+
+.blogpostThumbnailLarge .container:hover {
+    background-color: #DDDDDD;
+}
+
+@media (max-width: 601px) {
+    .blogpostThumbnailLarge {
+        width: 100%;
+    }
+}
+
+.blogpostThumbnailLarge .thumbnail {
+    width: 100%;
+}
+
+.blogpostThumbnailLarge .postLink {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.blogpostThumbnailLarge .body {
+    padding: 8px;
+}

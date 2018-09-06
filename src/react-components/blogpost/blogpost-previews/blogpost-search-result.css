@@ -1,0 +1,50 @@
+.blogpostSearchResult {
+    width: 100%;
+}
+
+.blogpostSearchResult .container {
+    width: 100%;
+    margin: 8px;
+    display: inline-block;
+}
+
+
+.blogpostSearchResult .container:hover {
+    background-color: #DDDDDD;
+}
+
+.blogpostSearchResult .thumbnail {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogpostSearchResult .body {
+    height: auto;
+    width: 100%;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width:601px) {
+    .blogpostSearchResult .thumbnail {
+        height: 150px;
+        width: 24.99999%;
+        float: left;
+    }
+
+    .blogpostSearchResult .body {
+        height: 150px;
+        width: 74.99999%;
+        float: left;
+        padding-left: 16px;
+    }
+}
+
+.blogpostSearchResult .postLink {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}

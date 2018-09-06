@@ -1,0 +1,41 @@
+.aboutBlog {
+    background-color: #EEEEEE;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .4);
+    padding: 64px;
+}
+
+.aboutBlog h1 {
+    text-align: center;
+}
+
+.aboutBlog h3 {
+    text-align: center;
+}
+
+.aboutBlog .zachHuxfordImage {
+    width: 100%;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.aboutBlog img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transform: translate(-50%);
+}
+
+.aboutBlog .body {
+    width: 100%;
+}
+
+.aboutBlog .links {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+
+.aboutBlog .links a {
+    font-size: 24px;
+    padding: 16px;
+}

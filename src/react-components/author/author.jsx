@@ -1,9 +1,11 @@
 import React from 'react';
 import moment from 'moment';
 
-import config from '../config.js';
+import ErrorPage from '../error-page';
 
-import '../css/author.css';
+import config from '../../config.js';
+
+import './author.css';
 
 
 
@@ -46,7 +48,7 @@ class AboutAuthor extends React.Component {
     render () {
         const { error, isLoaded, aboutAuthor } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return <ErrorPage error={error.message} />;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {

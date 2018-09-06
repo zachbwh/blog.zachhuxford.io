@@ -1,6 +1,9 @@
 import React from 'react';
+
 import LoadingIcon from './loading-icon';
-import BlogPostSearchResult from './blogpost-search-result';
+import BlogPostSearchResult from './blogpost/blogpost-previews/blogpost-search-result';
+import ErrorPage from './error-page';
+
 
 import config from '../config.js';
 
@@ -26,7 +29,12 @@ class SearchPage extends React.Component {
         const { error, isLoaded } = this.state;
         if (error) {
             console.log(error.message)
-            return <div>Error: {error.message}</div>;
+            return (
+                <div className="searchResults">
+                    <ErrorPage error={error.message} />
+                    Note: currently search only works on hashtags. Try searching for 'tech'
+                </div>
+            );
         } else if (!isLoaded) {
             return <LoadingIcon />;
         }

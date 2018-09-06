@@ -6,7 +6,8 @@ import Disqus from 'disqus-react';
 import PostHashTags from './post-hash-tags'
 import NavigateButtons from './navigate-buttons';
 import LoadingIcon from '../loading-icon';
-import AboutAuthor from '../author';
+import AboutAuthor from '../author/author';
+import ErrorPage from '../error-page';
 
 import config from '../../config.js';
 
@@ -31,7 +32,7 @@ class BlogPost extends React.Component {
         const { error, isLoaded, blogpost } = this.state;
         if (error) {
             console.log(error.message)
-            return <div>Error: {error.message}</div>;
+            return <ErrorPage error={error.message} />;
         } else if (!isLoaded) {
             return <LoadingIcon />;
         } else {

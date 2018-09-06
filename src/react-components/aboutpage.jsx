@@ -1,5 +1,9 @@
 import React from 'react';
 
+import AboutBlog from './about-blog';
+
+import '../css/about-page.css'
+
 class AboutPage extends React.Component {
     constructor(props) {
         super(props);
@@ -7,7 +11,9 @@ class AboutPage extends React.Component {
 
     render() {
         return (
-            <div></div>
+            <div className="aboutPage">
+                <AboutBlog />
+            </div>
         );
     }
 }

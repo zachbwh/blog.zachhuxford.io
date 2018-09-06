@@ -1,5 +1,6 @@
-.searchResults {
+.errorPage {
     margin: auto;
     max-width:980px;
     padding: 16px;
+    text-align: center;
 }
