@@ -6,6 +6,7 @@
     font-size: 18px;
     position: fixed;
     top: 0px;
+    z-index: 999;
 }
 
 .navBar .navBarItemLeft {
@@ -49,6 +50,7 @@
     font-size: 18px;
     position: fixed;
     top: 63px;
+    z-index: 999;
 }
 
 .mobileNavBar ul {
