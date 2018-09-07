@@ -45,6 +45,13 @@
     font-size: 18px;
     padding: 16px;
 }
+
+@media (max-width: 601px) {
+    .blogpost .body {
+        padding: 8px;
+    }
+    
+}
   
 .blogpost .code {
     margin-left: 16px;

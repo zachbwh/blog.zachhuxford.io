@@ -4,6 +4,12 @@
     padding: 64px;
 }
 
+@media (max-width: 601px) {
+    .aboutBlog {
+        padding: 16px;
+    }
+}
+
 .aboutBlog h1 {
     text-align: center;
 }
