@@ -1,0 +1,7 @@
+.loadingIcon {
+    margin: 50%;
+}
+
+.loadingIcon div {
+    transform: translate(-50%);
+}

@@ -1,6 +1,6 @@
 var config = {
     api: {
-        domain: "http://localhost:3001"
+        domain: "https://api.zachhuxford.io"
     },
     disqus: {
         domain: "https://blog.zachhuxford.io"
