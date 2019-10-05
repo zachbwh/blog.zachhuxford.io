@@ -2,11 +2,11 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faSnapchat, faTelegram, faTwitter, faGithub, faLinkedin, faLastfm, faSpotify } from '@fortawesome/free-brands-svg-icons';
 
 import '../css/about-blog.css';
 
-library.add(fab);
+library.add(faFacebook, faInstagram, faSnapchat, faTelegram, faTwitter, faGithub, faLinkedin, faLastfm, faSpotify);
 
 class AboutBlog extends React.Component {
     render() {
@@ -43,15 +43,15 @@ class AboutBlog extends React.Component {
                     <h3>Since you can probably dox me anyways</h3>
                     <p className="links">
                         
-                        <a href="https://www.facebook.com/zachbwh"><FontAwesomeIcon icon={["fab", "facebook"]} /></a>
-                        <a href="https://www.instagram.com/zachbwh/"><FontAwesomeIcon icon={["fab", "instagram"]} /></a>
-                        <a href="https://www.snapchat.com/add/zachbwh"><FontAwesomeIcon icon={["fab", "snapchat"]} /></a>
-                        <a href="https://t.me/zachbwh"><FontAwesomeIcon icon={["fab", "telegram"]} /></a>
-                        <a href="https://twitter.com/zachbwh"><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
-                        <a href="https://github.com/zachbwh"><FontAwesomeIcon icon={["fab", "github"]} /></a>
-                        <a href="https://www.linkedin.com/in/zachbwh/"><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>
-                        <a href="https://www.last.fm/user/zachbwh"><FontAwesomeIcon icon={["fab", "lastfm"]} /></a>
-                        <a href="https://open.spotify.com/user/zachbwh"><FontAwesomeIcon icon={["fab", "spotify"]} /></a>
+                        <a href="https://www.facebook.com/zachbwh"><FontAwesomeIcon icon={faFacebook} /></a>
+                        <a href="https://www.instagram.com/zachbwh/"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href="https://www.snapchat.com/add/zachbwh"><FontAwesomeIcon icon={faSnapchat} /></a>
+                        <a href="https://t.me/zachbwh"><FontAwesomeIcon icon={faTelegram} /></a>
+                        <a href="https://twitter.com/zachbwh"><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href="https://github.com/zachbwh"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/zachbwh/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href="https://www.last.fm/user/zachbwh"><FontAwesomeIcon icon={faLastfm} /></a>
+                        <a href="https://open.spotify.com/user/zachbwh"><FontAwesomeIcon icon={faSpotify} /></a>
                     </p>
                 </div>
             </div>
