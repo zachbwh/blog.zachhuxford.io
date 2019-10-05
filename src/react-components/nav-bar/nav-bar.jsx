@@ -35,7 +35,7 @@ class NavBar extends React.Component {
         return (
             <div>
                 <div className="navBar">
-                    <a className="navBarItemLeft mobile" onClick={ this.showMobileNav.bind(this) }><FontAwesomeIcon icon="bars" /></a>
+                    <button className="navBarItemLeft mobile" onClick={ this.showMobileNav.bind(this) }><FontAwesomeIcon icon="bars" /></button>
                     <a className="navBarItemLeft desktop" href="/"><FontAwesomeIcon icon="home" /> Home</a>
                     <a className="navBarItemLeft desktop" href="/about">About</a>
                     <a className="navBarItemRight desktop" href="https://zachhuxford.io">zachhuxford.io <FontAwesomeIcon icon="globe" /></a>
