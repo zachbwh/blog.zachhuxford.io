@@ -21,8 +21,7 @@ class AboutBlog extends React.Component {
                         My name is Zach Huxford and this is my blog.
                     </p>
                     <p>
-                        I am currently a Software Engineering Student at the <a href="https://www.auckland.ac.nz/">University of Auckland</a> working part-time 
-                        at <a href="https://www.vinsight.net">Vinsight</a> as a Web Developer Intern.
+                        I'm a Software Developer.
                     </p>
                     <p>
                         Although I flat in Auckland with my mates currently, I am originally from Wellington (New Zealand).
@@ -40,9 +39,7 @@ class AboutBlog extends React.Component {
                     </p>
                 </div>
                 <div>
-                    <h3>Since you can probably dox me anyways</h3>
                     <p className="links">
-                        
                         <a href="https://www.facebook.com/zachbwh"><FontAwesomeIcon icon={faFacebook} /></a>
                         <a href="https://www.instagram.com/zachbwh/"><FontAwesomeIcon icon={faInstagram} /></a>
                         <a href="https://www.snapchat.com/add/zachbwh"><FontAwesomeIcon icon={faSnapchat} /></a>
