@@ -6,10 +6,6 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 library.add(faArrowRight, faArrowLeft);
 
 class NavigateButtons extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="navigator-buttons">

@@ -4,13 +4,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faGlobe, faBars } from '@fortawesome/free-solid-svg-icons';
 
-import config from '../../config.js';
-
 import './nav-bar.css'
 
-
 library.add(faHome, faSearch, faGlobe, faBars);
-
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -57,7 +53,7 @@ class NavBar extends React.Component {
     }
 
     onSearch(event) {
-        if (event.key == 'Enter') {
+        if (event.key === 'Enter') {
             window.location.pathname = "/search/tags/" + event.target.value;
         }
     }

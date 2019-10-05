@@ -5,10 +5,6 @@ import ReactLoading from 'react-loading';
 import '../css/loading-icon.css';
 
 class LoadingIcon extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="loadingIcon">

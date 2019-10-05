@@ -14,7 +14,7 @@ class AboutBlog extends React.Component {
             <div className="aboutBlog">
                 <h1>Kia Ora!</h1>
                 <div className="zachHuxfordImage">
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/blog-zachhuxford-io/blog/author/Zach+Huxford/cropped_me.jpg" />
+                    <img alt="Headshot of Zach Huxford" src="https://s3-ap-southeast-2.amazonaws.com/blog-zachhuxford-io/blog/author/Zach+Huxford/cropped_me.jpg" />
                 </div>
                 <div className="body">
                     <p>
