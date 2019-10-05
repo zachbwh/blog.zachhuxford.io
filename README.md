@@ -1,1 +1,1 @@
-# blog.zachhuxford.io
+# blog.zachhuxford.io  [![Build Status](https://travis-ci.com/zachbwh/blog.zachhuxford.io.svg?branch=master)](https://travis-ci.com/zachbwh/blog.zachhuxford.io)
